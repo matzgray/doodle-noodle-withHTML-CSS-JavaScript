@@ -1,0 +1,573 @@
+:root{
+    --primary-color:#d49d7b;
+    --secondary-color:#ffc135;
+    --tertiary-color:#df1c1c;
+    --text-dark:#212529;
+    --white:#ffffff;
+    --max-width:1200px;
+    --header-font-1: "Alfa Slab One", serif;
+    --header-font-2: "Bebas Neue", sans-serif;
+
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html,
+body{
+    scroll-behavior: smooth;
+   
+}
+body{
+    font-family:"Montserrat", sans-serif;
+    min-height: 100vh;
+ 
+}
+
+nav{
+    background-color: transparent;
+    height: 180px;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 30px;
+}
+
+nav li{
+    height: 50px;
+
+}
+nav a{
+    height: 100%;
+    padding: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #212529;
+}
+
+nav a:hover{
+    /* background-color: #df1c1c; */
+    color: #df1c1c;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.logo{
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(245, 232, 232, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+
+width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+.header{
+    /* background-image: url(image/yellow-paper.jpg); */
+    background-position: center center;
+    background-size: cover; 
+    width: 100%;
+    
+
+   
+  
+    
+}
+
+
+.header {
+    /* background-image: url("image/yellow-paper.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_container{
+    width: 96%;
+    font-weight: 900;
+    font-size: large;
+
+    display: flex;
+    justify-content: space-between;
+ 
+   
+}
+.header_container:hover{
+    color: #df1c1c;
+    font-size: x-large;
+}
+
+.header_content{
+    width: 40%;
+    
+
+padding-left: 14%;
+    text-align: center;
+    font-size: larger;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    
+ 
+
+}
+.header_img{
+    background-image: url(image/noodles-card5.jpg);
+   
+    background-repeat: no-repeat;
+    width: 50%;
+    margin-bottom: -40px;
+ 
+
+
+}
+
+.header_img:hover{
+    background-image: url(image/noodle-hero1.png);
+   
+    transform-origin: 0.8s;
+    transition-timing-function: ease-in-out;
+    
+   
+
+}
+
+.img2{
+    display: none;
+}
+.main_banner{
+    margin-top: 5%;
+    
+}
+
+banner{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+
+.banner_img{
+    
+    border: 2px solid rgba(128, 128, 128, 0.418);
+    overflow: hidden;
+    border-radius: 6%;
+   
+
+   
+  
+  
+    width: 30%;
+   
+    
+}
+.banner_img0{
+    
+    transition: 0.5s;
+
+}
+
+.banner_img0:hover{
+transform: scale(1.1);
+
+}
+.banner_p{
+    padding: 4%;
+}
+.banner_btn{
+    width: 16%;
+    height: 44px;
+    border: #212529 2px solid;
+   
+    border-radius: 10px;
+    margin-bottom: 5%;
+    color:white;
+   
+}
+.sub_banner{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 10%;
+    margin-bottom: 4%;
+  
+}
+
+.sub_banner_img{
+    width: 25%;
+    border: 2px solid gainsboro; 
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.sub_btn{
+    width: 120px;
+    height: 38px;
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+   margin: 10px;
+}
+
+.sub_banner_img:hover{
+    transform: scale(1.05);
+
+
+}
+
+/* contact////////////////////////////////////////////////////////////// */
+.cont{
+   background-image: url(image/noodles-footer-image.jpg);
+   background-position: center;
+    background-size: cover;
+    margin: 2;
+    padding: 10%;
+  
+}
+.contact
+{
+    background-color: #fff;
+    border-radius: 5%;
+    opacity: 80%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    
+   
+}
+.read
+{
+    width: 110px;
+    height: 38px;
+   border: 1px solid transparent;
+    border-radius: 10px;
+    background-color:rgb(58, 57, 57);
+    color: #fff;
+    cursor: pointer;
+   
+
+}
+
+.size
+{
+    height: 38px;
+   width: 80%;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: #fff;
+}
+
+.pagecont
+{
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    width: 80%;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+.p1{
+    font-size: small;
+    color: black;
+
+}
+
+/* ends///////////////////////////////////////////////////////////////////////////// */
+
+/* footer/////////////////////////////////////////////////// */
+
+.main_footer{
+    /* background-image: url(image/noodles-footer.jpg); */
+    background-color: rgb(34, 33, 33);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+.main_footer a{
+    color: #ffffff;
+}
+ 
+    
+    
+    
+
+
+.footer img{
+    padding-left: 8%;
+   
+}
+
+
+.footer_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer_content1{
+    width: 40%;
+    margin-left:8%;
+
+}
+.footer_content2{
+    width: 60%;
+    padding-left: 12%;
+    margin-left: 5%;
+
+}
+
+.footer_content2 ul li{
+    padding-top: 2%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer_content2 ul li a{
+   
+    padding-left: 4%;
+    font-size: large;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (width < 770px) {
+   .hideOnMobile{
+    display: none;
+   }
+
+   .menu-button{
+    display: flex;
+}
+.header_container{
+    width: 80%;
+display: block;
+   
+ margin-left: 8%;
+ margin-top: 30px;
+}
+
+.header_content{
+    width: 90%;
+  
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    padding: 5%;
+ 
+
+}
+.header_img{
+    display: none;
+}
+.img2{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+banner{
+    width: 60%;
+    padding-top: 5%;
+    display: block;
+    margin-left: 20%;
+}
+
+
+.banner_img{
+    border: 2px solid gray;
+    /* border-radius: 6%; */
+  width: 100% ;
+  margin-top: 12%;   
+}
+.banner_p{
+    padding: 4%;
+}
+
+
+.sub_banner_img{
+    width: 46%;
+    border: 2px solid gainsboro; 
+    border-radius: 15px;
+}
+
+.contact
+{
+    
+    /* opacity: 0.70; */
+  width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/* footer//////////////////////////////////////////////////////////////// */
+.footer img{
+    margin: auto;
+}
+.footer_content{
+    width: 100%;
+    display: block;
+    margin: auto;
+   
+}
+.footer_content1{
+    width: 80%;
+    margin: auto;
+
+}
+.footer_content2{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: -4%;
+    
+    
+    
+  
+
+}
+
+
+
+}
+/* mobile size screen////////////////////////////////////////////////////////////////////////// */
+@media (width < 430px) {
+
+    .sidebar{
+        width: 100%;
+    }
+  .navbar{
+    width: 100%;
+  }
+.nav-logo{
+    width: 140%;
+    margin-left: -14px;
+   
+}
+
+.header_container{
+    width: 90%;
+    display: block;
+   
+ margin-left: 3%;
+ margin-top: 30px;
+}
+
+.img1{
+    margin-left: 2%;
+    width: 90%;
+   
+}
+
+.banner{
+    width: 80%;
+    padding-top: 5%;
+    display: block;
+    margin-left: 10%;
+}
+.banner_img{
+    border: 2px solid gray;
+    /* border-radius: 6%; */
+  width: 100%;
+  margin-top: 10%;   
+}
+.banner_btn{
+    width: 25%;
+    height: 44px;
+}
+
+.sub_banner_img{
+    width: 80%;
+    border: 2px solid gainsboro; 
+    border-radius: 15px;
+}
+
+.contact
+{
+  
+    /* opacity: 0.70; */
+    width: 130%;
+   
+   margin-left: -10%;
+}
+
+/* footer///////////////////////////////////////////////////////////////////////////// */
+
+.main_footer{
+    font-size: smaller;
+}
+
+
+.footer img{
+    margin: auto;
+    width: 80%;
+}
+.footer_content{
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-size: medium;
+    padding: 5%;
+   
+}
+.footer_content1{
+    width: 80%;
+    margin: auto;
+
+}
+.footer_content2{
+    /* width: 130%; */
+    margin-top: 10%;
+   
+   
+    
+    
+    
+  
+
+}
+
+
+}
