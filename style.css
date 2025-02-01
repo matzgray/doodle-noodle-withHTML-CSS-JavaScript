@@ -128,7 +128,7 @@ width: 100%;
 }
 .header_container:hover{
     color: #df1c1c;
-    font-size: x-large;
+    
 }
 
 .header_content{
@@ -474,6 +474,10 @@ banner{
 }
 /* mobile size screen////////////////////////////////////////////////////////////////////////// */
 @media (width < 430px) {
+    .logo{
+        font-size:large;
+        font-weight: 900;
+    }
 
     .sidebar{
         width: 100%;
